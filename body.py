@@ -44,7 +44,7 @@ def pw_check():
 
 pwd = pw_check()
 st.subheader('Your Point')
-st.write("Good" if pwd > 35 else "Bad")
+st.write("%d",pwd)
 
     
     
