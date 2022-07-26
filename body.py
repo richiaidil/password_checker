@@ -45,11 +45,11 @@ pwd = pw_check(pw)
 st.subheader('Your Point')
 st.write(pwd)
 st.write("Good" if pwd >= 35 else "Bad")
-if upper != True:
+if upper == False:
    st.warning('The password need at least 1 uppercase letter.')
-elif num != True:
+elif num == False:
    st.warning('The password need at least 1 number.')
-elif alphanum != True:
+elif alphanum == False:
    st.warning('The password need at least 1 uppercase letter.')
 elif len(pw)<8:
    st.warning('The password need to be at least 8 characters.')
