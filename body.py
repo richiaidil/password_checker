@@ -40,7 +40,8 @@ def pw_check(password):
       point+=5
       
       return point
-    
+
+pw_check(pw)
 st.subheader('Your Point')
 st.write("Good" if point > 35 else "Bad")
 
