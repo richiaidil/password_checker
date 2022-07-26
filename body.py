@@ -10,7 +10,7 @@ Are you cofident  that your password is **STRONG** or not?
 
 pw = st.text_input('Enter your password', '#HireMe1234')
 
-def pw_check(password)
+def pw_check(password):
     point = 0
     num = False
     upper = False
