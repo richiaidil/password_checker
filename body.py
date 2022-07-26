@@ -44,7 +44,7 @@ def pw_check():
 
 pwd = pw_check()
 st.subheader('Your Point')
-st.write("%d",pwd)
+st.write("%d/40"pwd)
 
     
     
