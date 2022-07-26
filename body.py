@@ -18,7 +18,7 @@ def pw_check():
     lower = False
     alphanum = False
 
-    for letter in password:
+    for letter in pw:
         if letter.isnumeric():
             num = True
         elif letter.islower():
