@@ -16,7 +16,7 @@ def pw_check(password):
     lower = False
     alphanum = False
 
-    for letter in pw:
+    for letter in password:
         if letter.isnumeric():
             num = True
         elif letter.islower():
@@ -35,7 +35,7 @@ def pw_check(password):
       point+=10
     if lower == True and alphanum == True:
       point+=10
-    if len(pw) >= 8:
+    if len(password) >= 8:
       point+=5
       
       return point
@@ -45,6 +45,14 @@ pwd = pw_check(pw)
 st.subheader('Your Point')
 st.write(pwd)
 st.write("Good" if pwd >= 35 else "Bad")
+if upper != True:
+   st.warning('The password need at least 1 uppercase letter.')
+elif num != True:
+   st.warning('The password need at least 1 number.')
+elif alphanum != True:
+   st.warning('The password need at least 1 uppercase letter.')
+elif len(pw)<8:
+   st.warning('The password need to be at least 8 characters.')
 
     
     
