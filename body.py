@@ -53,7 +53,7 @@ def pw_check():
     if min_length != True:
        st.warning('Your password need to be at least 8 characters.')
     
-   return point
+  return point
 
 pt = pw_check()
 
