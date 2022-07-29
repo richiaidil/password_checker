@@ -8,15 +8,16 @@ st.write("""
 Are you cofident  that your password is **STRONG** or not?
 """)
 
-def pw_check(password):
+def pw_check():
    
+    pw = st.text_input('Enter your password', '#HireMe1234')
     point = 0
     num = False
     upper = False
     lower = False
     alphanum = False
 
-    for letter in password:
+    for letter in pw:
         if letter.isnumeric():
             num = True
         elif letter.islower():
@@ -27,6 +28,7 @@ def pw_check(password):
             alphanum = True
         if upper and lower and num and alphanum:
             break
+            
     if lower == True:
       point+=5
     if lower == True and upper == True:
@@ -40,11 +42,11 @@ def pw_check(password):
       
       return point
 
-pw = st.text_input('Enter your password', '#HireMe1234')
-pwd = pw_check(pw)
+pt = pw_check()
+
 st.subheader('Your Point')
-st.write(pwd)
-st.write("Good" if pwd >= 35 else "Bad")
+st.write(pt)
+st.write("Good" if pt >= 35 else "Bad")
 
 
     
