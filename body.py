@@ -38,7 +38,7 @@ def pw_check():
     if lower == True and alphanum == True:
       point+=10
     if len(pw) >= 8:
-      point+=5
+      point+=15
       
     return point
 
