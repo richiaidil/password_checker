@@ -40,7 +40,7 @@ def pw_check():
     if len(pw) >= 8:
       point+=5
       
-      return point
+    return point
 
 pt = pw_check()
 
