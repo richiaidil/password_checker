@@ -42,7 +42,7 @@ def pw_check():
       point+=15
       min_length = True
  
-   return point
+    return point
 
 pt = pw_check()
 
