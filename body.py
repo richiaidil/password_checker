@@ -41,7 +41,17 @@ def pw_check():
     if len(pw) >= 8:
       point+=15
       min_length = True
-      
+ 
+      if lower != True:
+         st.warning('Your password need to has at least 1 lowercase letter.')
+      if upper != True:
+         st.warning('Your password need to has at least 1 uppercase letter.')
+      if num != True:
+         st.warning('Your password need to has at least 1 number.')
+      if alphanum != True:
+         st.warning('Your password need to has at least 1 punctuation mark.')
+      if min_length != True:
+         st.warning('Your password need to be at least 8 characters.')
     return point
 
 pt = pw_check()
@@ -50,16 +60,6 @@ st.subheader('Your Point')
 st.write(pt)
 st.write("Good" if pt >= 35 else "Bad")
 
-if lower != True:
-   st.warning('Your password need to has at least 1 lowercase letter.')
-if upper != True:
-   st.warning('Your password need to has at least 1 uppercase letter.')
-if num != True:
-   st.warning('Your password need to has at least 1 number.')
-if alphanum != True:
-   st.warning('Your password need to has at least 1 punctuation mark.')
-if min_length != True:
-   st.warning('Your password need to be at least 8 characters.')
 
 
     
