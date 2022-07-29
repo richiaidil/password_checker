@@ -42,7 +42,8 @@ def pw_check():
       point+=15
       min_length = True
     
-    st.warning('Your password need to has at least 1 lowercase letter.')
+    if lower = False:
+       st.warning('Your password need to has at least 1 lowercase letter.')
  
     return point
 
